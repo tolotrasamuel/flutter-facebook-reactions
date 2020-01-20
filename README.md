@@ -1,6 +1,9 @@
-# gdg_flutter_tana
+# Flutter Facebook reactions animation
 
-A new Flutter application.
+A Flutter reproduction of the Facebook reactions animation.
+## Demo
+![alt text](https://github.com/tolotrasamuel/flutter-facebook-reactions/raw/master/demo/demo.gif "Flutter Facebook Reaction Animation")
+
 
 ## Getting Started
 

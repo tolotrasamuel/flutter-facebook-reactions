@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Facebook reactions animation',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Facebook reactions animation'),
     );
   }
 }
@@ -183,7 +183,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                     style: TextStyle(color: Colors.grey),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal:4.0),
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 4.0),
                                     child: Container(
                                       height: 3.0,
                                       width: 3.0,
@@ -193,7 +194,11 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                       ),
                                     ),
                                   ),
-                                  Icon(Icons.av_timer, size: 18.0, color: Colors.grey,),
+                                  Icon(
+                                    Icons.av_timer,
+                                    size: 18.0,
+                                    color: Colors.grey,
+                                  ),
                                 ],
                               ),
                             ],
@@ -202,50 +207,15 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       ],
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top:12.0),
+                      padding: const EdgeInsets.only(top: 12.0),
                       child: Text(
-                          'Rehefa miteny ilay prof mandritan exam hoe, 5 minutes sisa'),
+                          'When the teacher says: "5 minutes left" during the exam'),
                     ),
                   ],
                 ),
               ),
               Container(child: Image.asset('assets/horse.jpg')),
-//            Row(
-//              children: <Widget>[
-//                GestureDetector(
-//                  onPanDown: (DragDownDetails details) {
-//                    setState(() {
-//                      hahaHeight = 100.0;
-//                    });
-//                  },
-//                  onPanEnd: (DragEndDetails details) {
-//                    setState(() {
-//                      hahaHeight = 70.0;
-//                    });
-//                  },
-//                  child: AnimatedContainer(
-//                    height: hahaHeight,
-//                    duration: Duration(milliseconds: 300),
-//                    child: Padding(
-//                      padding: const EdgeInsets.all(8.0),
-//                      child: Container(
-//                        color: Colors.green,
-//                        height: 50.0,
-//                        width: 30.0,
-//                      ),
-//                    ),
-//                  ),
-//                ),
-//                Padding(
-//                  padding: const EdgeInsets.all(8.0),
-//                  child: Container(
-//                    color: Colors.green,
-//                    height: 50.0,
-//                    width: 30.0,
-//                  ),
-//                ),
-//              ],
-//            ),
+//
               FadeTransition(
                 opacity: opacityTween.animate(
                   CurvedAnimation(
@@ -351,11 +321,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
